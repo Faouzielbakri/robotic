@@ -6,6 +6,38 @@
 	box-sizing: border-box;
 	font-family: 'Baloo Paaji 2', sans-serif;
 }
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding:100px;
+	background: url('../img/robot.jpg');  
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+	scroll-snap-align: center;
+}
+section#Cours{
+	background: url('../img/courseeeeee.png') no-repeat center center/cover;
+  	z-index: 2;
+}
+
+
+section#team{
+	background: black;
+  	z-index: 2;
+}
+section#about {
+  background: url('../img/about.png') no-repeat center center/cover;
+  	z-index: 2;
+}
+
+section#contact {
+  background:black;
+  	z-index: 2;
+}
 
 h1{
 	position: absolute; top: 20%;left: 10%; color : #40c3ff; font-size: 2.5em;
@@ -85,19 +117,7 @@ header a.logo:hover{
 	left: 25%;
 	transform: translate(-50%,-50%) rotate(-45deg);
 }
-section {
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	padding:100px;
-	background: url('../img/robot.jpg');  
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	transition: 0.5s;
-	z-index: 2;
-	scroll-snap-align: center;
-}
+
 .home.active , .chreta.active {
 	transform: translateX(-400px);
 }
@@ -265,25 +285,7 @@ section {
 }
 
 
-section#Cours{
-	background: url('../img/courseeeeee.png') no-repeat center center/cover;
-  	z-index: 2;
-}
 
-
-section#team{
-	background: black;
-  	z-index: 2;
-}
-section#about {
-  background: url('../img/about.png') no-repeat center center/cover;
-  	z-index: 2;
-}
-
-section#contact {
-  background:black;
-  	z-index: 2;
-}
 
 
 
