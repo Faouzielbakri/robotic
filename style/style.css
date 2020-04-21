@@ -6,38 +6,6 @@
 	box-sizing: border-box;
 	font-family: 'Baloo Paaji 2', sans-serif;
 }
-section {
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	padding:100px;
-	background: url('../img/robot.jpg');  
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	transition: 0.5s;
-	z-index: 2;
-	scroll-snap-align: center;
-}
-section#Cours{
-	background: url('../img/courseeeeee.png') no-repeat center center/cover;
-  	z-index: 2;
-}
-
-
-section#team{
-	background: black;
-  	z-index: 2;
-}
-section#about {
-  background: url('../img/about.png') no-repeat center center/cover;
-  	z-index: 2;
-}
-
-section#contact {
-  background:black;
-  	z-index: 2;
-}
 
 h1{
 	position: absolute; top: 20%;left: 10%; color : #40c3ff; font-size: 2.5em;
@@ -49,7 +17,7 @@ h1{
   /* CSS Smooth Scroll */
   overflow-y: scroll; 
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y ;
 }
 ::-webkit-scrollbar
 {
@@ -117,7 +85,19 @@ header a.logo:hover{
 	left: 25%;
 	transform: translate(-50%,-50%) rotate(-45deg);
 }
-
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding:100px;
+	background: url('../img/robot.jpg');  
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+	scroll-snap-align: center;
+}
 .home.active , .chreta.active {
 	transform: translateX(-400px);
 }
@@ -268,12 +248,12 @@ header a.logo:hover{
 	.object {
 		min-height: 299;
 		width: 60%;
-		height: 50%;
+		height: 35%;
  		animation: MoveUpDown 3s ease-in-out infinite ;
  		position: absolute;
  		right: 5%;
 		bottom: 15%;
-		opacity: 50%;
+		opacity: 20%;
 	}
 	h2{
 		font-size: 1.5em
@@ -285,10 +265,25 @@ header a.logo:hover{
 }
 
 
+section#Cours{
+	background: black;
+  	z-index: 2;
+}
 
 
+section#team{
+	background: black;
+  	z-index: 2;
+}
+section#about {
+  background: url('../img/courseeeeee.png') no-repeat center center/cover;
+  	z-index: 2;
+}
 
-
+section#contact {
+  background:black;
+  	z-index: 2;
+}
 
 
 
@@ -415,4 +410,122 @@ div .object{
     right: 10%;
     bottom: 15%;
   }
+}
+
+
+
+
+.grouper {
+  width: 80%;
+  padding:20px;
+}
+.grouper h2{
+  width: 100%;
+  color: #45f3ff;
+  font-size: 36px 
+}
+.grouper .row100{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+} 
+.grouper .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s
+}
+.grouper .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #45f3ff;
+}
+
+.grouper .row100 .inputBox input,
+.grouper .row100 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+.grouper .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none; 
+}
+.grouper .row100 .inputBox input:focus + .text, 
+.grouper .row100 .inputBox input:valid + .text,
+.grouper .row100 .inputBox input:focus + .email, 
+.grouper .row100 .inputBox input:valid + .email{
+ top: -35px;
+ left: -10px;
+}
+.grouper .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #54f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.grouper .row100 .inputBox input:focus ~ .line, 
+.grouper .row100 .inputBox input:valid ~ .line{
+  height: 100%;
+}
+.grouper .row100 .inputBox.textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.grouper .row100 .inputBox.textarea textarea{
+  height: 100%;
+  resize: none;
+}
+.grouper .row100 .inputBox textarea:focus + .text, 
+.grouper .row100 .inputBox textarea:valid + .text{
+ top: -35px;
+ left: -10px;
+}
+.grouper .row100 .inputBox textarea:focus ~ .line, 
+.grouper .row100 .inputBox textarea:valid ~ .line{
+  height: 100%;
+}
+input[type="submit"]{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #45f3ff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+div .sendico{
+  position: absolute;
+  max-width: 25px;
+  max-height: 25px;
+  content: url('../img/send.png');
+  z-index: 5;
+  left: 14px;
+  top: 5px;
 }
