@@ -472,7 +472,9 @@ div .object{
 .grouper .row100 .inputBox input:focus + .text, 
 .grouper .row100 .inputBox input:valid + .text,
 .grouper .row100 .inputBox input:focus + .email, 
-.grouper .row100 .inputBox input:valid + .email{
+.grouper .row100 .inputBox input:valid + .email,
+.grouper .row100 .inputBox textarea:focus + .text, 
+.grouper .row100 .inputBox textarea:valid + .text{
  top: -35px;
  left: -10px;
 }
@@ -488,7 +490,9 @@ div .object{
   pointer-events: none;
 }
 .grouper .row100 .inputBox input:focus ~ .line, 
-.grouper .row100 .inputBox input:valid ~ .line{
+.grouper .row100 .inputBox input:valid ~ .line,
+.grouper .row100 .inputBox textarea:focus ~ .line, 
+.grouper .row100 .inputBox textarea:valid ~ .line{
   height: 100%;
 }
 .grouper .row100 .inputBox.textarea{
@@ -500,15 +504,6 @@ div .object{
 .grouper .row100 .inputBox.textarea textarea{
   height: 100%;
   resize: none;
-}
-.grouper .row100 .inputBox textarea:focus + .text, 
-.grouper .row100 .inputBox textarea:valid + .text{
- top: -35px;
- left: -10px;
-}
-.grouper .row100 .inputBox textarea:focus ~ .line, 
-.grouper .row100 .inputBox textarea:valid ~ .line{
-  height: 100%;
 }
 input[type="submit"]{
   border: none;
