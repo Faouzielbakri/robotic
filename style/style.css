@@ -12,6 +12,7 @@ body{
 }
 
 .concharger{
+	z-index:  100000000;
 	position: fixed;
 	left: 25%;
 	width: 100%;
