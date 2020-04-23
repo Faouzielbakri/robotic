@@ -14,12 +14,14 @@
             tog.classList.toggle('active');
             nav.classList.toggle('active');
 			}
-	function  des(){
+	 function  des(){
                     // - Code to execute when all DOM content is loaded. 
                   // - including fonts, images, etc.
                     setTimeout(function(){
                          const loader = document.querySelector(".concharger");
+                         const balck = document.querySelector(".balck");
                          loader.className += " hidden"; // class "loader hidden"
+                         balck.parentNode.removeChild(balck);
                                }, 2000)
 
               }
