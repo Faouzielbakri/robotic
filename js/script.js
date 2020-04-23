@@ -22,6 +22,7 @@
                          const balck = document.querySelector(".balck");
                          loader.className += " hidden"; // class "loader hidden"
                          balck.parentNode.removeChild(balck);
+                         balck.className += " hidden"; 
                                }, 2000)
 
               }
