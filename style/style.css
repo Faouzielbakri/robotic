@@ -15,6 +15,16 @@
   background: black;
   z-index:  5000000;
 }
+.balck h2{
+  position: fixed;
+  color: white;
+  bottom: 10%;
+  letter-spacing: 20px;
+  font-size: 2em;
+  font-weight: 400;
+  align-self: center;
+  right: 43%;
+}
 
 .concharger{
   z-index:  100000000;
