@@ -17,7 +17,5 @@
 	window.addEventListener("load", function () {
     	const loader = document.querySelector(".concharger");
     	loader.className += " hidden"; // class "loader hidden"
-	if(loader.style.opacity == 0){
-                        loader.parentNode.removeChild(loader);
-             }
+	
 	});
