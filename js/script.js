@@ -14,8 +14,12 @@
             tog.classList.toggle('active');
             nav.classList.toggle('active');
 			}
-	window.addEventListener("load", function () {
-    	const loader = document.querySelector(".concharger");
-    	loader.className += " hidden"; // class "loader hidden"
-	
-	});
+	function  des(){
+                    // - Code to execute when all DOM content is loaded. 
+                  // - including fonts, images, etc.
+                    setTimeout(function(){
+                         const loader = document.querySelector(".concharger");
+                         loader.className += " hidden"; // class "loader hidden"
+                               }, 2000)
+
+              }
