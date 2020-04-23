@@ -320,7 +320,7 @@ h1{
   /* CSS Smooth Scroll */
   overflow-y: scroll; 
   scroll-behavior: smooth;
-  scroll-snap-type: y ;
+  scroll-snap-type: y mandatory ;
 }
 ::-webkit-scrollbar
 {
