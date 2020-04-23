@@ -825,7 +825,8 @@ div .sendico{
 
 
 
-.concharger.hidden {
+.concharger.hidden,
+.balck.hidden{
     animation: fadeOut 1s;
     animation-fill-mode: forwards;
 }
