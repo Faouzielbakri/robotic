@@ -1,0 +1,147 @@
+@import "https://fonts.google.com/specimen/Nunito?sidebar.open&selection.family=Nunito:ital,wght@1,600";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    list-style: none;
+    text-decoration: none;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.bg h1{
+    position: relative;
+    align-items: center;
+    top: 40%;
+    letter-spacing: 50px;
+    font-size: 15em;
+    font-weight: 1500;
+    color: #40c3f0;
+    filter: blur(5px);
+}
+body{
+    background-color: #000000;
+
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainMenu{
+    width: 250px;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item{
+    border-top: 1px solid #ef584a;
+    overflow: hidden;
+}
+.btn{
+    display: block;
+    padding: 15px 20px;
+    background-color: #6dd5ed;
+    color: #fff;
+    position: relative;
+}
+.btn:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid #6dd5ed;
+    right: 15px;
+    bottom: -10px;
+    z-index: 9;
+    
+}
+.btn i {
+    margin-right: 10px;
+}
+.subMenu{
+    background: #ff00cc;
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+.subMenu a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid #394c7f;
+    position: relative;
+    
+}
+.subMenu a:before{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.8s;
+
+}
+.subMenu a:hover:before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 15px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    /* background-color: #d8d824; */
+    border-top: 24px solid transparent;
+    border-left: 11px solid #000;
+    border-bottom: 24px solid transparent;
+}
+.subMenu a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.subMenu a:hover:after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+    /* background-color: #d8d824; */
+    border-top: 24px solid transparent;
+    border-right: 11px solid #000;
+    border-bottom: 24px solid transparent;
+}
+.subMenu a:hover{
+    background: #273057;
+    background: -moz-linear-gradient(top, #ff00cc 0%, #ff00cc 50%, #d04ed6 51%, #d04ed6 100%);
+    background: -webkit-linear-gradient(top, #ff00cc 0%,#ff00cc 50%,#d04ed6 51%,#d04ed6 100%);
+    background: linear-gradient(to bottom, #ff00cc 0%,#ff00cc 50%,#d04ed6 51%,#d04ed6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273057', endColorstr='#394c7f',GradientType=0 );
+    transition: all 0.8s;
+    border-bottom: 1px solid #394c7f;
+    font-size: 1.1em;
+}
+.subMenu a:last-child{
+    border:none;
+}
+.item:target .subMenu{
+    max-height: 25em;
+}
+
+#account,#support,#about,#logout{
+	font-size: 1em;
+}
+.wrapper h1 {
+	text-align: center;
+	margin-bottom: 5px;
+}
