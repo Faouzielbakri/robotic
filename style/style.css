@@ -895,7 +895,7 @@ div .sendico{
 }
 footer {
   background: #0F2027;
-  left: 40%;
+  font-weight: 600;
   color: white;
   text-align: center;
 }
