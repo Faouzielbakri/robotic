@@ -893,3 +893,10 @@ div .sendico{
         visibility: hidden;
     }
 }
+footer {
+  background: #0F2027;
+  left: 40%;
+  color: white;
+  text-align: center;
+}
+
